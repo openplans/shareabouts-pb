@@ -6,6 +6,7 @@ app:
   name: Participatory Budgeting NYC - District 39
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for NYC)
+  district: 39th
 
 # Settings for map and layer configs
 map:
@@ -13,10 +14,10 @@ map:
   geolocation_onload: false
   options:
     center:
-      lat: 40.673673020430236
-      lng:  -73.99506568908691
-    zoom: 15
-    minZoom: 13
+      lat: 40.68281850797658
+      lng: -73.99982929229736
+    zoom: 16
+    minZoom: 15
     maxZoom: 17
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/openplans.map-owivdlal/{z}/{x}/{y}.png
@@ -339,9 +340,8 @@ activity:
 place:
   adding_supported: true
   add_button_label: _(Submit an idea)
-  action_text: _(added)
   title: _(Describe your idea)
-  action_text: _(created)
+  action_text: _(suggested)
   help_text: _(Ideas must be "capital" projects - physical infrastructure for public benefit. These should not include "expense" projects, such as providing afterschool programs or changing bus routes, which are not eligible.)
   anonymous_name: _(Someone)
   submit_button_label: _(Share my idea)
@@ -354,12 +354,16 @@ place:
           value: _(...)
         - key: size
           value: 30
+        - key: maxlength
+          value: 100
     - prompt: _(So that people could...)
       type: textarea
       name: description
       attrs:
         - key: placeholder
           value: _(...)
+        - key: maxlength
+          value: 1000
     - prompt: _(Pick a category for your idea)
       type: select
       options:
@@ -448,3 +452,13 @@ support:
   submit_btn_text: _(Support This!)
   action_text: supported
   anonymous_name: _(Someone)
+  
+pages:
+  - title: About
+    slug: about
+    name: about
+    start_page: true
+  - title: Get More Involved
+    slug: involved
+    name: involved
+    start_page: true

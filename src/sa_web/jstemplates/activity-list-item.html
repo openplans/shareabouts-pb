@@ -10,15 +10,14 @@
         </strong>
 
         {{#if is_place }}
-          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class="place-type">{{ place.place_type_label }}</span>
-          {{#if place.name }} named <span class="place-name">{{ place.name }}</span>{{/if }}
+          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class="place-type">{{ place.place_type_label }} idea</span>{{#if place.name }}: <span class="place-name">{{ place.name }}</span>{{/if }}
         {{else}}
           {{ action }}
 
           {{#if place.name }}
             <span class="place-name">{{ place.name }}</span>
           {{else}}
-            a{{# place.type_starts_with_vowel }}n{{/ place.type_starts_with_vowel }} {{ place.place_type_label }}
+            a{{# place.type_starts_with_vowel }}n{{/ place.type_starts_with_vowel }} {{ place.place_type_label }} idea
           {{/if }}
 
         {{/if }}
