@@ -27,56 +27,56 @@ map:
 # The values map the place type to map icons (defined below).
 place_types:
   culture:
-    default: blue
-    focused: red
+    default: puck-blue
+    focused: puck-blue
     label: _(Culture & Community Facilities)
   education:
-    default: blue
-    focused: red
+    default: puck-red
+    focused: puck-blue
     label: _(Schools & Education)
   environment:
-    default: blue
-    focused: red
+    default: puck-green
+    focused: puck-blue
     label: _(Environment)
   housing:
-    default: blue
-    focused: red
+    default: building
+    focused: building-focused
     label: _(Housing)
   parks:
-    default: blue
-    focused: red  
+    default: tree
+    focused: tree-focused
     label: _(Parks & Recreation)
   health:
-    default: blue
-    focused: red
+    default: puck-yellow
+    focused: puck-blue
     label: _(Public Health)
   safety:
-    default: blue
-    focused: red
+    default: puck-purple
+    focused: puck-blue
     label: _(Public Safety)
   seniors:
-    default: blue
-    focused: red
+    default: puck-blue
+    focused: puck-blue
     label: _(Seniors)
   streets:
-    default: blue
-    focused: red
+    default: cone
+    focused: cone-focused
     label: _(Streets & Sidewalks)
   transit:
-    default: blue
-    focused: red
+    default: puck-blue
+    focused: puck-blue
     label: _(Transit)
   youth:
-    default: blue
-    focused: red
+    default: puck-blue
+    focused: puck-blue
     label: _(Youth)
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
 place_type_icons:
   tree:
-    iconUrl: /static/css/images/tree.png
-    shadowUrl: /static/css/images/shadow-round.png
+    iconUrl: /static/css/images/markers/tree.png
+    shadowUrl: /static/css/images/markers/shadow-round.png
     iconSize:
       width: 31
       height: 32
@@ -87,8 +87,8 @@ place_type_icons:
       x: 16
       y: 25
   tree-focused:
-    iconUrl: /static/css/images/tree.png
-    shadowUrl: /static/css/images/shadow-round-white.png
+    iconUrl: /static/css/images/markers/tree.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
     iconSize:
       width: 31
       height: 32
@@ -99,8 +99,8 @@ place_type_icons:
       x: 16
       y: 25
   tree-gray:
-    iconUrl: /static/css/images/tree-gray.png
-    shadowUrl: /static/css/images/shadow-round.png
+    iconUrl: /static/css/images/markers/tree-gray.png
+    shadowUrl: /static/css/images/markers/shadow-round.png
     iconSize:
       width: 31
       height: 32
@@ -111,8 +111,8 @@ place_type_icons:
       x: 16
       y: 25
   tree-gray-focused:
-    iconUrl: /static/css/images/tree-gray.png
-    shadowUrl: /static/css/images/shadow-round-white.png
+    iconUrl: /static/css/images/markers/tree-gray.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
     iconSize:
       width: 31
       height: 32
@@ -123,8 +123,8 @@ place_type_icons:
       x: 16
       y: 25
   tree-gold:
-    iconUrl: /static/css/images/tree-gold.png
-    shadowUrl: /static/css/images/shadow-round-gold.png
+    iconUrl: /static/css/images/markers/tree-gold.png
+    shadowUrl: /static/css/images/markers/shadow-round-gold.png
     iconSize:
       width: 31
       height: 32
@@ -135,8 +135,8 @@ place_type_icons:
       x: 16
       y: 25
   tree-gold-focused:
-    iconUrl: /static/css/images/tree-gold.png
-    shadowUrl: /static/css/images/shadow-round-white.png
+    iconUrl: /static/css/images/markers/tree-gold.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
     iconSize:
       width: 31
       height: 32
@@ -147,8 +147,8 @@ place_type_icons:
       x: 16
       y: 25
   cone:
-    iconUrl: /static/css/images/cone.png
-    shadowUrl: /static/css/images/shadow-square.png
+    iconUrl: /static/css/images/markers/cone.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
     iconSize:
       width: 31
       height: 32
@@ -159,8 +159,8 @@ place_type_icons:
       x: 16
       y: 25
   cone-focused:
-    iconUrl: /static/css/images/cone.png
-    shadowUrl: /static/css/images/shadow-square-white.png
+    iconUrl: /static/css/images/markers/cone.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
     iconSize:
       width: 31
       height: 32
@@ -171,8 +171,8 @@ place_type_icons:
       x: 16
       y: 25
   cone-gray:
-    iconUrl: /static/css/images/cone-gray.png
-    shadowUrl: /static/css/images/shadow-square.png
+    iconUrl: /static/css/images/markers/cone-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
     iconSize:
       width: 31
       height: 32
@@ -183,8 +183,8 @@ place_type_icons:
       x: 16
       y: 25
   cone-gray-focused:
-    iconUrl: /static/css/images/cone-gray.png
-    shadowUrl: /static/css/images/shadow-square-white.png
+    iconUrl: /static/css/images/markers/cone-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
     iconSize:
       width: 31
       height: 32
@@ -195,8 +195,8 @@ place_type_icons:
       x: 16
       y: 25
   cone-gold:
-    iconUrl: /static/css/images/cone-gold.png
-    shadowUrl: /static/css/images/shadow-square-gold.png
+    iconUrl: /static/css/images/markers/cone-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-gold.png
     iconSize:
       width: 31
       height: 32
@@ -207,8 +207,8 @@ place_type_icons:
       x: 16
       y: 25
   cone-gold-focused:
-    iconUrl: /static/css/images/cone-gold.png
-    shadowUrl: /static/css/images/shadow-square-white.png
+    iconUrl: /static/css/images/markers/cone-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
     iconSize:
       width: 31
       height: 32
@@ -219,8 +219,8 @@ place_type_icons:
       x: 16
       y: 25
   building:
-    iconUrl: /static/css/images/building.png
-    shadowUrl: /static/css/images/shadow-square.png
+    iconUrl: /static/css/images/markers/building.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
     iconSize:
       width: 31
       height: 32
@@ -231,8 +231,8 @@ place_type_icons:
       x: 16
       y: 25
   building-focused:
-    iconUrl: /static/css/images/building.png
-    shadowUrl: /static/css/images/shadow-square-white.png
+    iconUrl: /static/css/images/markers/building.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
     iconSize:
       width: 31
       height: 32
@@ -243,8 +243,8 @@ place_type_icons:
       x: 16
       y: 25
   building-gray:
-    iconUrl: /static/css/images/building-gray.png
-    shadowUrl: /static/css/images/shadow-square.png
+    iconUrl: /static/css/images/markers/building-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
     iconSize:
       width: 31
       height: 32
@@ -255,8 +255,8 @@ place_type_icons:
       x: 16
       y: 25
   building-gray-focused:
-    iconUrl: /static/css/images/building-gray.png
-    shadowUrl: /static/css/images/shadow-square-white.png
+    iconUrl: /static/css/images/markers/building-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
     iconSize:
       width: 31
       height: 32
@@ -267,8 +267,8 @@ place_type_icons:
       x: 16
       y: 25
   building-gold:
-    iconUrl: /static/css/images/building-gold.png
-    shadowUrl: /static/css/images/shadow-square-gold.png
+    iconUrl: /static/css/images/markers/building-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-gold.png
     iconSize:
       width: 31
       height: 32
@@ -279,8 +279,8 @@ place_type_icons:
       x: 16
       y: 25
   building-gold-focused:
-    iconUrl: /static/css/images/building-gold.png
-    shadowUrl: /static/css/images/shadow-square-white.png
+    iconUrl: /static/css/images/markers/building-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
     iconSize:
       width: 31
       height: 32
@@ -338,27 +338,28 @@ activity:
 
 place:
   adding_supported: true
-  add_button_label: _(Add an idea)
+  add_button_label: _(Submit an idea)
   action_text: _(added)
   title: _(Describe your idea)
   action_text: _(created)
+  help_text: _(Ideas must be "capital" projects - physical infrastructure for public benefit. These should not include "expense" projects, such as providing afterschool programs or changing bus routes, which are not eligible.)
   anonymous_name: _(Someone)
   submit_button_label: _(Share my idea)
   items:
-    - prompt: _(Your idea)
+    - prompt: _(My project idea is...)
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: _(Brief description)
+          value: _(...)
         - key: size
           value: 30
-    - prompt: _(Why do you want this?)
+    - prompt: _(So that people could...)
       type: textarea
       name: description
       attrs:
         - key: placeholder
-          value: _(Description...)
+          value: _(...)
     - prompt: _(Pick a category for your idea)
       type: select
       options:
@@ -387,8 +388,8 @@ place:
         - label: _(Youth)
           value: youth
       name: location_type
-    - prompt: _(Image)
-      inputfile_label: _(Add an image)
+    - prompt: _(Optionally, add an image to illustrate your idea)
+      inputfile_label: _(Choose Image)
       type: file
       name: my_image
       attrs:
