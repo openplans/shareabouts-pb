@@ -161,8 +161,8 @@ body {
   height: 100%;
 }
 #site-header {
-  color: #eee;
-  background-color: #777;
+  color: #000;
+  background-color: #fff;
   height: 4em;
   padding: 0 1em;
   position: relative;
@@ -177,12 +177,12 @@ body {
 #site-header a:hover, #site-header button:hover { color: #fff; }
 
 /* Logo */
+
 #site-title {
-  font-size: 1em;
-  font-family: 'Dancing Script', cursive;
+  font-size: .75em;
+  font-family: "Helvetica Neue", Arial, Helvetica, serif;
   font-weight: bold;
-  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.5);
-  color: #eee;
+  text-shadow: none;
   float: left;
   margin: 0 0.5em 0 0;
   padding: 0.5em 0;
@@ -199,10 +199,10 @@ body {
   font-size: 2.25em;
   line-height: 1.5;
   text-decoration: none;
-  color: #eee;
+  color: #000;
 }
 #site-title a:hover {
-  color: #fff;
+  color: #eee;
 }
 
 /* Primary Menu */
