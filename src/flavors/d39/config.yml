@@ -1,11 +1,11 @@
 # Settings for the app
 app:
   # HTML Title
-  title: Shareabouts
+  title: Participatory Budgeting NYC - District 39
   # Header name
-  name: Shareabouts
+  name: Participatory Budgeting NYC - District 39
   # Meta description that will show up in Google search results
-  meta_description: _(Shareabouts is a mapping tool to gather crowd sourced public input. Use it to collect suggested locations and comments in a social, engaging process.)
+  meta_description: _(Participatory Budgeting for NYC)
 
 # Settings for map and layer configs
 map:
@@ -13,10 +13,10 @@ map:
   geolocation_onload: false
   options:
     center:
-      lat: 39.9523524
-      lng: -75.1636075
-    zoom: 14
-    minZoom: 10
+      lat: 40.673673020430236
+      lng:  -73.99506568908691
+    zoom: 15
+    minZoom: 13
     maxZoom: 17
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/openplans.map-dmar86ym/{z}/{x}/{y}.png
@@ -26,18 +26,50 @@ map:
 # The keys show up in the dropdown list when you are adding a new place
 # The values map the place type to map icons (defined below).
 place_types:
-  landmark:
+  culture:
     default: blue
     focused: red
-    label: _(Landmark)
-  park:
+    label: _(Culture & Community Facilities)
+  education:
     default: blue
     focused: red
-    label: _(Park)
-  school:
+    label: _(Schools & Education)
+  environment:
     default: blue
     focused: red
-    label: _(School)
+    label: _(Environment)
+  housing:
+    default: blue
+    focused: red
+    label: _(Housing)
+  parks:
+    default: blue
+    focused: red  
+    label: _(Parks & Recreation)
+  health:
+    default: blue
+    focused: red
+    label: _(Public Health)
+  safety:
+    default: blue
+    focused: red
+    label: _(Public Safety)
+  seniors:
+    default: blue
+    focused: red
+    label: _(Seniors)
+  streets:
+    default: blue
+    focused: red
+    label: _(Streets & Sidewalks)
+  transit:
+    default: blue
+    focused: red
+    label: _(Transit)
+  youth:
+    default: blue
+    focused: red
+    label: _(Youth)
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
@@ -72,56 +104,87 @@ activity:
 
 place:
   adding_supported: true
-  add_button_label: _(Add a Place)
+  add_button_label: _(Add an idea)
   action_text: _(added)
-  title: _(Tell us more...)
+  title: _(Describe your idea)
   action_text: _(created)
   anonymous_name: _(Someone)
-  submit_button_label: _(Submit)
+  submit_button_label: _(Share my idea)
   items:
-    - prompt: _(Location Name)
+    - prompt: _(Your idea)
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: _(Location Name)
+          value: _(Brief description)
         - key: size
           value: 30
-    - prompt: _(Location Type)
-      type: select
-      options:
-        - label: _(Landmark)
-          value: landmark
-        - label: _(Park)
-          value: park
-        - label: _(School)
-          value: school
-      name: location_type
-    - prompt: _(Image)
-      inputfile_label: _(Add an Image)
-      type: file
-      name: my_image
-      optional: true
-      attrs:
-        - key: accept
-          value: image/*
-    - prompt: _(Description)
+    - prompt: _(Why do you want this?)
       type: textarea
       name: description
-      optional: true
       attrs:
         - key: placeholder
           value: _(Description...)
-    - prompt: _(Your Name)
+    - prompt: _(Pick a category for your idea)
+      type: select
+      options:
+        - label: _(Please choose...)
+          value: 
+        - label: _(Culture & Community Facilities)
+          value: culture
+        - label: _(Schools & Education)
+          value: education
+        - label: _(Environment)
+          value: environment
+        - label: _(Housing)
+          value: housing
+        - label: _(Parks & Recreation)
+          value: parks
+        - label: _(Public Health)
+          value: health
+        - label: _(Public Safety)
+          value: safety
+        - label: _(Seniors)
+          value: seniors
+        - label: _(Streets & Sidewalks)
+          value: streets
+        - label: _(Transit)
+          value: transit   
+        - label: _(Youth)
+          value: youth
+      name: location_type
+    - prompt: _(Image)
+      inputfile_label: _(Add an image)
+      type: file
+      name: my_image
+      attrs:
+        - key: accept
+          value: image/*
+    - prompt: _(Your name, will be shown on the map)
       type: text
       name: submitter_name
-      optional: true
+      optional: false
       attrs:
         - key: placeholder
           value: _(Name)
         - key: size
           value: 30
-
+    - prompt: _(Your email, will not be shown)
+      type: text
+      name: private-email
+      attrs:
+        - key: placeholder
+          value: _(Email)
+        - key: size
+          value: 30
+    - prompt: _(Your zip code, will not be shown)
+      type: text
+      name: private-zip
+      attrs:
+        - key: placeholder
+          value: _(Zip)
+        - key: size
+          value: 30
 survey:
   submission_type: comments
 
@@ -150,21 +213,3 @@ support:
   submit_btn_text: _(Support This!)
   action_text: supported
   anonymous_name: _(Someone)
-
-pages:
-  - title: _(About)
-    slug: about
-    name: overview
-    start_page: true
-
-  - title: _(Why Shareabouts?)
-    slug: why
-    url: /static/pages/why.html
-
-  - title: _(Features)
-    slug: features
-    url: /static/pages/features.html
-
-  - title: _(GitHub)
-    external: true
-    url: https://github.com/openplans/shareabouts
