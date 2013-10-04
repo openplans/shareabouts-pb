@@ -18,7 +18,7 @@ map:
       lng: -73.99982929229736
     zoom: 16
     minZoom: 15
-    maxZoom: 17
+    maxZoom: 18
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/openplans.map-owivdlal/{z}/{x}/{y}.png
     attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
