@@ -32,8 +32,8 @@ place_types:
     focused: puck-blue
     label: _(Culture & Community Facilities)
   education:
-    default: puck-red
-    focused: puck-blue
+    default: books
+    focused: books-focused
     label: _(Schools & Education)
   environment:
     default: puck-green
@@ -48,12 +48,12 @@ place_types:
     focused: tree-focused
     label: _(Parks & Recreation)
   health:
-    default: puck-yellow
-    focused: puck-blue
+    default: cross
+    focused: cross-focused
     label: _(Public Health)
   safety:
-    default: puck-purple
-    focused: puck-blue
+    default: badge
+    focused: badge-focused
     label: _(Public Safety)
   seniors:
     default: puck-blue
@@ -64,8 +64,8 @@ place_types:
     focused: cone-focused
     label: _(Streets & Sidewalks)
   transit:
-    default: puck-blue
-    focused: puck-blue
+    default: bus
+    focused: bus-focused
     label: _(Transit)
   youth:
     default: puck-blue
@@ -291,6 +291,368 @@ place_type_icons:
     iconAnchor:
       x: 16
       y: 25
+  books:
+    iconUrl: /static/css/images/markers/books.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  books-focused:
+    iconUrl: /static/css/images/markers/books.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  books-gray:
+    iconUrl: /static/css/images/markers/books-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  books-gray-focused:
+    iconUrl: /static/css/images/markers/books-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  books-gold:
+    iconUrl: /static/css/images/markers/books-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-gold.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  books-gold-focused:
+    iconUrl: /static/css/images/markers/books-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  bus:
+    iconUrl: /static/css/images/markers/bus.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  bus-focused:
+    iconUrl: /static/css/images/markers/bus.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  bus-gray:
+    iconUrl: /static/css/images/markers/bus-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  bus-gray-focused:
+    iconUrl: /static/css/images/markers/bus-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  bus-gold:
+    iconUrl: /static/css/images/markers/bus-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-gold.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  bus-gold-focused:
+    iconUrl: /static/css/images/markers/bus-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  cross:
+    iconUrl: /static/css/images/markers/cross.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  cross-focused:
+    iconUrl: /static/css/images/markers/cross.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  cross-gray:
+    iconUrl: /static/css/images/markers/cross-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  cross-gray-focused:
+    iconUrl: /static/css/images/markers/cross-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  cross-gold:
+    iconUrl: /static/css/images/markers/cross-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-gold.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  cross-gold-focused:
+    iconUrl: /static/css/images/markers/cross-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  badge:
+    iconUrl: /static/css/images/markers/badge.png
+    shadowUrl: /static/css/images/markers/shadow-round.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  badge-focused:
+    iconUrl: /static/css/images/markers/badge.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  badge-gray:
+    iconUrl: /static/css/images/markers/badge-gray.png
+    shadowUrl: /static/css/images/markers/shadow-round.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  badge-gray-focused:
+    iconUrl: /static/css/images/markers/badge-gray.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  badge-gold:
+    iconUrl: /static/css/images/markers/badge-gold.png
+    shadowUrl: /static/css/images/markers/shadow-round-gold.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  badge-gold-focused:
+    iconUrl: /static/css/images/markers/badge-gold.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+
+  foo:
+    iconUrl: /static/css/images/markers/foo.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  foo-focused:
+    iconUrl: /static/css/images/markers/foo.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  foo-gray:
+    iconUrl: /static/css/images/markers/foo-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  foo-gray-focused:
+    iconUrl: /static/css/images/markers/foo-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  foo-gold:
+    iconUrl: /static/css/images/markers/foo-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-gold.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  foo-gold-focused:
+    iconUrl: /static/css/images/markers/foo-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+
   puck-green:
     iconUrl: /static/css/images/markers/dot-70d52c.png
     iconSize:
