@@ -1,9 +1,9 @@
 # Settings for the app
 app:
   # HTML Title
-  title: Participatory Budgeting NYC - District 39
+  title: Participatory Budgeting NYC - ADMIN
   # Header name
-  name: Participatory Budgeting NYC - District 39
+  name: Participatory Budgeting NYC - ADMIN
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for NYC)
   district: 39th
@@ -331,6 +331,7 @@ place_type_icons:
     iconAnchor:
       x: 9
       y: 9
+
 activity:
   # Optional. Activity is supported by default. Set to false to disable.
   enabled: true
@@ -339,14 +340,14 @@ activity:
 
 place:
   adding_supported: true
-  add_button_label: _(Submit an idea)
+  add_button_label: _(Add location as admin)
   title: _(Describe your idea)
   action_text: _(suggested)
-  help_text: _(Ideas must be "capital" projects - physical infrastructure for public benefit. These should not include "expense" projects, such as providing afterschool programs or changing bus routes, which are not eligible.)
+  help_text: _(ADMIN MODE!)
   anonymous_name: _(Someone)
   submit_button_label: _(Share my idea)
   items:
-    - prompt: _(My project idea is...)
+    - prompt: _(Name)
       type: text
       name: name
       attrs:
@@ -356,7 +357,7 @@ place:
           value: 30
         - key: maxlength
           value: 100
-    - prompt: _(So that people could...)
+    - prompt: _(Description)
       type: textarea
       name: description
       attrs:
@@ -364,7 +365,7 @@ place:
           value: _(...)
         - key: maxlength
           value: 1000
-    - prompt: _(Pick a category for your idea)
+    - prompt: _(Location_type)
       type: select
       options:
         - label: _(Please choose...)
@@ -392,38 +393,22 @@ place:
         - label: _(Youth)
           value: youth
       name: location_type
-    - prompt: _(Optionally, add an image to illustrate your idea)
-      inputfile_label: _(Choose Image)
-      type: file
-      name: my_image
-      attrs:
-        - key: accept
-          value: image/*
-    - prompt: _(Your name, will be shown on the map)
-      type: text
-      name: submitter_name
-      optional: false
-      attrs:
-        - key: placeholder
-          value: _(Name)
-        - key: size
-          value: 30
-    - prompt: _(Your email, will not be shown)
-      type: text
-      name: private-email
-      attrs:
-        - key: placeholder
-          value: _(Email)
-        - key: size
-          value: 30
-    - prompt: _(Your zip code, will not be shown)
-      type: text
-      name: private-zip
-      attrs:
-        - key: placeholder
-          value: _(Zip)
-        - key: size
-          value: 30
+    - prompt: _(year)
+      type: textarea
+      name: year
+    - prompt: _(cost)
+      type: textarea
+      name: cost
+    - prompt: _(agency)
+      type: textarea
+      name: agency
+    - prompt: _(status)
+      type: textarea
+      name: status
+    - prompt: _(updated)
+      type: textarea
+      name: updated
+
 survey:
   submission_type: comments
 
