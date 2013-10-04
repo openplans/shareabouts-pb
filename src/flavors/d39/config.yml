@@ -28,8 +28,8 @@ map:
 # The values map the place type to map icons (defined below).
 place_types:
   culture:
-    default: puck-blue
-    focused: puck-blue
+    default: communitycenter
+    focused: communitycenter-focused
     label: _(Culture & Community Facilities)
   education:
     default: books
@@ -570,6 +570,79 @@ place_type_icons:
   badge-gold-focused:
     iconUrl: /static/css/images/markers/badge-gold.png
     shadowUrl: /static/css/images/markers/shadow-round-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+
+  communitycenter:
+    iconUrl: /static/css/images/markers/communitycenter.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  communitycenter-focused:
+    iconUrl: /static/css/images/markers/communitycenter.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  communitycenter-gray:
+    iconUrl: /static/css/images/markers/communitycenter-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  communitycenter-gray-focused:
+    iconUrl: /static/css/images/markers/communitycenter-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  communitycenter-gold:
+    iconUrl: /static/css/images/markers/communitycenter-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-gold.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  communitycenter-gold-focused:
+    iconUrl: /static/css/images/markers/communitycenter-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
     iconSize:
       width: 31
       height: 32
