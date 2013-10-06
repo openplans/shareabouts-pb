@@ -914,36 +914,39 @@ place:
         - label: _(Youth)
           value: youth
       name: location_type
-    - prompt: _(Optionally, add an image to illustrate your idea)
-      inputfile_label: _(Choose Image)
-      type: file
-      name: my_image
-      attrs:
-        - key: accept
-          value: image/*
-    - prompt: _(Your name, will be shown on the map)
+    - prompt: _(Your name, will be shown on the map. Required.)
       type: text
       name: submitter_name
       optional: false
       attrs:
-        - key: placeholder
-          value: _(Name)
         - key: size
           value: 30
-    - prompt: _(Your email, will not be shown)
+        - key: required
+          value: true
+    - prompt: _(Your email, will not be shown. Required.)
       type: text
       name: private-email
       attrs:
-        - key: placeholder
-          value: _(Email)
         - key: size
           value: 30
-    - prompt: _(Your zip code, will not be shown)
+        - key: required
+          value: true
+    - prompt: _(Your zip code, will not be shown. Optional.)
       type: text
       name: private-zip
       attrs:
-        - key: placeholder
-          value: _(Zip)
+        - key: size
+          value: 30
+    - prompt: _(Your age, will not be shown. Optional.)
+      type: text
+      name: private-age
+      attrs:
+        - key: size
+          value: 30
+    - prompt: _(Your gender, will not be shown. Optional.)
+      type: text
+      name: private-gender
+      attrs:
         - key: size
           value: 30
 survey:
