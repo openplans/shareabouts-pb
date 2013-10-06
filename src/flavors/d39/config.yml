@@ -14,10 +14,10 @@ map:
   geolocation_onload: false
   options:
     center:
-      lat: 40.68281850797658
-      lng: -73.99982929229736
-    zoom: 16
-    minZoom: 15
+      lat: 40.6623
+      lng: -73.9794
+    zoom: 14
+    minZoom: 14
     maxZoom: 18
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/openplans.map-owivdlal/{z}/{x}/{y}.png
