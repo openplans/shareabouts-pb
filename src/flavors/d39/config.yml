@@ -74,47 +74,47 @@ place_types:
   culture-approved:
     default: communitycenter-gold
     focused: communitycenter-gold-focused
-    label: _(Culture & Community Facilities)
+    label: _(Funded Culture & Community Facilities)
   education-approved:
     default: books-gold
     focused: books-gold-focused
-    label: _(Schools & Education)
+    label: _(Funded Schools & Education)
   environment-approved:
     default: puck-green
-    focused: puck-blue
-    label: _(Environment)
+    focused: puck-green
+    label: _(Funded Environment)
   housing-approved:
     default: building-gold
     focused: building-gold-focused
-    label: _(Housing)
+    label: _(Funded Housing)
   parks-approved:
     default: tree-gold
     focused: tree-gold-focused
-    label: _(Parks & Recreation)
+    label: _(Funded Parks & Recreation)
   health-approved:
     default: cross-gold
     focused: cross-gold-focused
-    label: _(Public Health)
+    label: _(Funded Public Health)
   safety-approved:
     default: badge-gold
     focused: badge-gold-focused
-    label: _(Public Safety)
+    label: _(Funded Public Safety)
   seniors-approved:
     default: puck-blue
     focused: puck-blue
-    label: _(Seniors)
+    label: _(Funded Seniors)
   streets-approved:
     default: cone-gold
     focused: cone-gold-focused
-    label: _(Streets & Sidewalks)
+    label: _(Funded Streets & Sidewalks)
   transit-approved:
     default: bus-gold
     focused: bus-gold-focused
-    label: _(Transit)
+    label: _(Funded Transit)
   youth-approved:
     default: puck-blue
     focused: puck-blue
-    label: _(Youth)
+    label: _(Funded Youth)
   culture-rejected:
     default: communitycenter-gray
     focused: communitycenter-gray-focused

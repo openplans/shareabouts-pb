@@ -1,7 +1,20 @@
         {{> place-detail-promotion-bar }}
 
         <header class="place-header clearfix">
-          <span class="place-submission-details">
+          
+            
+            <!-- if it's an old project, we don't want to show who submitted it -->
+            
+            {{#if year }}
+            
+            <p>{{ place_type_label }} project from <strong>{{ year }}</strong>.</p>
+            
+            <h1>{{ name }}</h1>
+            
+            {{ else }} <!-- no year means it's a user-submitted location -->
+            
+            <span class="place-submission-details">
+              
             {{#_}}<strong class="point-submitter">
               {{#if submitter}}
                 <img src="{{ submitter.avatar_url }}" class="avatar" /> {{ submitter.name }}
@@ -13,14 +26,25 @@
             {{/_}}
 
             <time datetime="{{ created_datetime }}" class="response-date">{{ pretty_created_datetime }}</time>.
-          </span>
+            </span>
+            {{/if }}
+          
         </header>
 
         <section class="place-items">
           
-          {{#if name }} <p>My project idea is: {{ name }}</p> {{/if }}
+          {{#if year }} <!-- it's a manually-added project from previous years -->
+          <p><strong>Description</strong>: {{ description }}.</p>
+          
+          <p><strong>Status</strong>: {{ status }}  (last updated {{ updated }})</p>
+          <p><strong>Cost</strong>: {{ cost }}</p>
+          <p><strong>Agency</strong>: {{ agency }}</p>
+          
+          {{ else }}
+          
+            {{#if name }} <p>My project idea is: {{ name }}</p> {{/if }}
 
-          {{#if description }} <p>So that people could: {{ description }}</p> {{/if }}
+            {{#if description }} <p>So that people could: {{ description }}</p> {{/if }}
           
           {{# attachments }}
           <div class="place-item place-attachment-{{ name }}">
@@ -28,6 +52,7 @@
           </div>
           {{/ attachments }}
 
+          {{/if }}
         </section>
 
         {{#survey_config}}
