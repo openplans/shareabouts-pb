@@ -184,9 +184,10 @@ ul.recent-points {
   border-bottom: 1px solid #ddd;
   list-style: none;
   margin-left: 0 !important;
+  font-weight: bold;
 }
 .legend li {
-  padding: 8px 0 4px 0 !important;
+  padding: 8px 0 2px 0 !important;
 }
 .legend img {
   float: left;
@@ -200,7 +201,13 @@ ul.recent-points {
   z-index: 1;
   opacity: 0.25;
 }
-
+.color-info {
+  font-size: 0.85em;
+  text-align: center;
+  background: #ddd;
+  margin: 0 0 -6px !important;
+  padding: 6px 3px !important;
+}
 
 .guidelines-header {
   clear: both;
