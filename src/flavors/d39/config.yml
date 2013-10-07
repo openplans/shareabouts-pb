@@ -36,16 +36,16 @@ place_types:
     focused: books-focused
     label: _(Schools & Education)
   environment:
-    default: puck-green
-    focused: puck-blue
+    default: tree
+    focused: tree-focused
     label: _(Environment)
   housing:
     default: building
     focused: building-focused
     label: _(Housing)
   parks:
-    default: tree
-    focused: tree-focused
+    default: swings
+    focused: swings-focused
     label: _(Parks & Recreation)
   health:
     default: cross
@@ -729,6 +729,78 @@ place_type_icons:
       y: 25
   communitycenter-gold-focused:
     iconUrl: /static/css/images/markers/communitycenter-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  swings:
+    iconUrl: /static/css/images/markers/swings.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  swings-focused:
+    iconUrl: /static/css/images/markers/swings.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  swings-gray:
+    iconUrl: /static/css/images/markers/swings-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  swings-gray-focused:
+    iconUrl: /static/css/images/markers/swings-gray.png
+    shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  swings-gold:
+    iconUrl: /static/css/images/markers/swings-gold.png
+    shadowUrl: /static/css/images/markers/shadow-square-gold.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  swings-gold-focused:
+    iconUrl: /static/css/images/markers/swings-gold.png
     shadowUrl: /static/css/images/markers/shadow-square-white.png
     iconSize:
       width: 31
