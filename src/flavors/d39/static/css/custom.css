@@ -175,8 +175,32 @@ ul.recent-points {
 }
 
 
-/* =Guidelines Chart
+/* =Legend & Guidelines Chart
 -------------------------------------------------------------- */
+
+.legend {
+  background-color: #eee;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  margin-left: 0 !important;
+}
+.legend li {
+  padding: 8px 0 4px 0 !important;
+}
+.legend img {
+  float: left;
+  position: relative;
+  z-index: 2;
+  margin-top: -8px;
+}
+.legend img + img {
+  margin-right: -21px;
+  right: 31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+
 
 .guidelines-header {
   clear: both;
