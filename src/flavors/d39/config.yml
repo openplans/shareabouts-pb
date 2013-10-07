@@ -967,7 +967,7 @@ place:
   add_button_label: _(Submit an idea)
   title: _(Describe your idea)
   action_text: _(suggested)
-  help_text: _(Ideas must be "capital" projects - physical infrastructure for public benefit. These should not include "expense" projects, such as providing afterschool programs or changing bus routes, which are not eligible.)
+  help_text: _(Ideas must be "capital" projects - building, installing, or repairing something for public benefit, such as renovating a public basketball court or purchasing new computers for a library.)
   anonymous_name: _(Someone)
   submit_button_label: _(Share my idea)
   items:
@@ -1017,7 +1017,7 @@ place:
         - label: _(Youth)
           value: youth
       name: location_type
-    - prompt: _(Your name, will be shown on the map. Required.)
+    - prompt: _(Your name (required and will be shown on map))
       type: text
       name: submitter_name
       optional: false
@@ -1026,7 +1026,7 @@ place:
           value: 30
         - key: required
           value: true
-    - prompt: _(Your email, will not be shown. Required.)
+    - prompt: _(Your email (required and will NOT be shown on the map))
       type: text
       name: private-email
       attrs:
@@ -1034,19 +1034,19 @@ place:
           value: 30
         - key: required
           value: true
-    - prompt: _(Your zip code, will not be shown. Optional.)
+    - prompt: _(Your zip code (optional and will NOT be shown on the map))
       type: text
       name: private-zip
       attrs:
         - key: size
           value: 30
-    - prompt: _(Your age, will not be shown. Optional.)
+    - prompt: _(Your age(optional and will NOT be shown on the map))
       type: text
       name: private-age
       attrs:
         - key: size
           value: 30
-    - prompt: _(Your gender, will not be shown. Optional.)
+    - prompt: _(Your gender (optional and will NOT be shown on the map))
       type: text
       name: private-gender
       attrs:
