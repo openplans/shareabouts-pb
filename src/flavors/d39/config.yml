@@ -68,8 +68,8 @@ place_types:
     focused: bus-focused
     label: _(Transit)
   youth:
-    default: puck-blue
-    focused: puck-blue
+    default: balloons
+    focused: balloons-focused
     label: _(Youth)
   culture-approved:
     default: communitycenter-gold
@@ -802,6 +802,78 @@ place_type_icons:
   swings-gold-focused:
     iconUrl: /static/css/images/markers/swings-gold.png
     shadowUrl: /static/css/images/markers/shadow-square-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  balloons:
+    iconUrl: /static/css/images/markers/balloons.png
+    shadowUrl: /static/css/images/markers/shadow-round.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  balloons-focused:
+    iconUrl: /static/css/images/markers/balloons.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  balloons-gray:
+    iconUrl: /static/css/images/markers/balloons-gray.png
+    shadowUrl: /static/css/images/markers/shadow-round.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  balloons-gray-focused:
+    iconUrl: /static/css/images/markers/balloons-gray.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  balloons-gold:
+    iconUrl: /static/css/images/markers/balloons-gold.png
+    shadowUrl: /static/css/images/markers/shadow-round-gold.png
+    iconSize:
+      width: 31
+      height: 32
+    shadowSize:
+      width: 31
+      height: 32
+    iconAnchor:
+      x: 16
+      y: 25
+  balloons-gold-focused:
+    iconUrl: /static/css/images/markers/balloons-gold.png
+    shadowUrl: /static/css/images/markers/shadow-round-white.png
     iconSize:
       width: 31
       height: 32
