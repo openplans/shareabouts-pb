@@ -203,10 +203,13 @@ ul.recent-points {
 }
 .color-info {
   font-size: 0.85em;
-  text-align: center;
   background: #ddd;
+  color: #666;
   margin: 0 0 -6px !important;
-  padding: 6px 3px !important;
+  padding: 6px 4px 8px 0 !important;
+}
+.color-info img {
+  margin-top: -12px;
 }
 
 .guidelines-header {
