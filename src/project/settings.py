@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'compressor',
 
     # Project apps
+    'participatory_budgeting',  # Common PB app.
     'sa_web',
     'proxy',
 )
