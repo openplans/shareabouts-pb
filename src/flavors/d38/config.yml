@@ -1,12 +1,12 @@
 # Settings for the app
 app:
   # HTML Title
-  title: Participatory Budgeting NYC - District 39
+  title: Participatory Budgeting NYC - District 38
   # Header name
-  name: Participatory Budgeting NYC - District 39
+  name: Participatory Budgeting NYC - District 38
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for NYC)
-  district: 39th
+  district: 38th
 
 # Settings for map and layer configs
 map:
@@ -14,8 +14,8 @@ map:
   geolocation_onload: false
   options:
     center:
-      lat: 40.6623
-      lng: -73.9794
+      lat: 40.6619
+      lng: -74.0125
     zoom: 14
     minZoom: 14
     maxZoom: 18
