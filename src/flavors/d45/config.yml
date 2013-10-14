@@ -7,6 +7,7 @@ app:
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for NYC)
   district: 45th
+  tagline: _(How would YOU spend $1 Million?)
 
 # Settings for map and layer configs
 map:
@@ -24,6 +25,7 @@ map:
     attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.PB-D45/{z}/{x}/{y}.png
+
 # The keys show up in the dropdown list when you are adding a new place
 # The values map the place type to map icons (defined below).
 place_types:

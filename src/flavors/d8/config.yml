@@ -7,6 +7,7 @@ app:
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for NYC)
   district: 8th
+  tagline: _(How would YOU spend $1 Million?)
 
 # Settings for map and layer configs
 map:
