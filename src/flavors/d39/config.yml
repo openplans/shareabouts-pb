@@ -25,9 +25,9 @@ map:
       attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
     - url: http://{s}.tiles.mapbox.com/v3/openplans.PB-D39/{z}/{x}/{y}.png
 
-# The keys show up in the dropdown list when you are adding a new place
-# The values map the place type to map icons (defined below).
+
 place_types:
+# Icons for new additions
   culture:
     label: _(Culture & Community Facilities)
     rules:
@@ -76,854 +76,754 @@ place_types:
             width: 31
             height: 32
           iconAnchor: [16, 25]
-#   environment:
-#     default: tree
-#     focused: tree-focused
-#     label: _(Environment)
-#   housing:
-#     default: building
-#     focused: building-focused
-#     label: _(Housing)
-#   parks:
-#     default: swings
-#     focused: swings-focused
-#     label: _(Parks & Recreation)
-#   health:
-#     default: cross
-#     focused: cross-focused
-#     label: _(Public Health)
-#   safety:
-#     default: badge
-#     focused: badge-focused
-#     label: _(Public Safety)
-#   seniors:
-#     default: seniors
-#     focused: seniors-focused
-#     label: _(Seniors)
-#   streets:
-#     default: cone
-#     focused: cone-focused
-#     label: _(Streets & Sidewalks)
-#   transit:
-#     default: bus
-#     focused: bus-focused
-#     label: _(Transit)
-#   youth:
-#     default: balloons
-#     focused: balloons-focused
-#     label: _(Youth)
-#   culture-approved:
-#     default: communitycenter-gold
-#     focused: communitycenter-gold-focused
-#     label: _(Funded Culture & Community Facilities)
-#   education-approved:
-#     default: books-gold
-#     focused: books-gold-focused
-#     label: _(Funded Schools & Education)
-#   environment-approved:
-#     default: tree-gold
-#     focused: tree-gold-focused
-#     label: _(Funded Environment)
-#   housing-approved:
-#     default: building-gold
-#     focused: building-gold-focused
-#     label: _(Funded Housing)
-#   parks-approved:
-#     default: swings-gold
-#     focused: swings-gold-focused
-#     label: _(Funded Parks & Recreation)
-#   health-approved:
-#     default: cross-gold
-#     focused: cross-gold-focused
-#     label: _(Funded Public Health)
-#   safety-approved:
-#     default: badge-gold
-#     focused: badge-gold-focused
-#     label: _(Funded Public Safety)
-#   seniors-approved:
-#     default: seniors-gold
-#     focused: seniors-gold-focused
-#     label: _(Funded Seniors)
-#   streets-approved:
-#     default: cone-gold
-#     focused: cone-gold-focused
-#     label: _(Funded Streets & Sidewalks)
-#   transit-approved:
-#     default: bus-gold
-#     focused: bus-gold-focused
-#     label: _(Funded Transit)
-#   youth-approved:
-#     default: balloons-gold
-#     focused: balloons-gold-focused
-#     label: _(Funded Youth)
-#   culture-rejected:
-#     default: communitycenter-gray
-#     focused: communitycenter-gray-focused
-#     label: _(Culture & Community Facilities)
-#   education-rejected:
-#     default: books-gray
-#     focused: books-gray-focused
-#     label: _(Schools & Education)
-#   environment-rejected:
-#     default: tree-gray
-#     focused: tree-gray-focused
-#     label: _(Environment)
-#   housing-rejected:
-#     default: building-gray
-#     focused: building-gray-focused
-#     label: _(Housing)
-#   parks-rejected:
-#     default: tree-gray
-#     focused: tree-gray-focused
-#     label: _(Parks & Recreation)
-#   health-rejected:
-#     default: cross-gray
-#     focused: cross-gray-focused
-#     label: _(Public Health)
-#   safety-rejected:
-#     default: badge-gray
-#     focused: badge-gray-focused
-#     label: _(Public Safety)
-#   seniors-rejected:
-#     default: seniors-gray
-#     focused: seniors-gray-focused
-#     label: _(Seniors)
-#   streets-rejected:
-#     default: cone-gray
-#     focused: cone-gray-focused
-#     label: _(Streets & Sidewalks)
-#   transit-rejected:
-#     default: bus-gray
-#     focused: bus-gray-focused
-#     label: _(Transit)
-#   youth-rejected:
-#     default: balloons-gray
-#     focused: balloons-gray-focused
-#     label: _(Youth)
-# # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
-# # for documention of each property. Any omitted property will be undefined.
-# place_type_icons:
-#   tree:
-#     iconUrl: /static/css/images/markers/tree.png
-#     shadowUrl: /static/css/images/markers/shadow-round.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   tree-focused:
-#     iconUrl: /static/css/images/markers/tree.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   tree-gray:
-#     iconUrl: /static/css/images/markers/tree-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-round.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   tree-gray-focused:
-#     iconUrl: /static/css/images/markers/tree-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   tree-gold:
-#     iconUrl: /static/css/images/markers/tree-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-round-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   tree-gold-focused:
-#     iconUrl: /static/css/images/markers/tree-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cone:
-#     iconUrl: /static/css/images/markers/cone.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cone-focused:
-#     iconUrl: /static/css/images/markers/cone.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cone-gray:
-#     iconUrl: /static/css/images/markers/cone-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cone-gray-focused:
-#     iconUrl: /static/css/images/markers/cone-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cone-gold:
-#     iconUrl: /static/css/images/markers/cone-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cone-gold-focused:
-#     iconUrl: /static/css/images/markers/cone-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   building:
-#     iconUrl: /static/css/images/markers/building.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   building-focused:
-#     iconUrl: /static/css/images/markers/building.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   building-gray:
-#     iconUrl: /static/css/images/markers/building-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   building-gray-focused:
-#     iconUrl: /static/css/images/markers/building-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   building-gold:
-#     iconUrl: /static/css/images/markers/building-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   building-gold-focused:
-#     iconUrl: /static/css/images/markers/building-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   books:
-#     iconUrl: /static/css/images/markers/books.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   books-focused:
-#     iconUrl: /static/css/images/markers/books.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   books-gray:
-#     iconUrl: /static/css/images/markers/books-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   books-gray-focused:
-#     iconUrl: /static/css/images/markers/books-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   books-gold:
-#     iconUrl: /static/css/images/markers/books-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   books-gold-focused:
-#     iconUrl: /static/css/images/markers/books-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   bus:
-#     iconUrl: /static/css/images/markers/bus.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   bus-focused:
-#     iconUrl: /static/css/images/markers/bus.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   bus-gray:
-#     iconUrl: /static/css/images/markers/bus-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   bus-gray-focused:
-#     iconUrl: /static/css/images/markers/bus-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   bus-gold:
-#     iconUrl: /static/css/images/markers/bus-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   bus-gold-focused:
-#     iconUrl: /static/css/images/markers/bus-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cross:
-#     iconUrl: /static/css/images/markers/cross.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cross-focused:
-#     iconUrl: /static/css/images/markers/cross.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cross-gray:
-#     iconUrl: /static/css/images/markers/cross-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cross-gray-focused:
-#     iconUrl: /static/css/images/markers/cross-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cross-gold:
-#     iconUrl: /static/css/images/markers/cross-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   cross-gold-focused:
-#     iconUrl: /static/css/images/markers/cross-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   badge:
-#     iconUrl: /static/css/images/markers/badge.png
-#     shadowUrl: /static/css/images/markers/shadow-round.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   badge-focused:
-#     iconUrl: /static/css/images/markers/badge.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   badge-gray:
-#     iconUrl: /static/css/images/markers/badge-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-round.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   badge-gray-focused:
-#     iconUrl: /static/css/images/markers/badge-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   badge-gold:
-#     iconUrl: /static/css/images/markers/badge-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-round-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   badge-gold-focused:
-#     iconUrl: /static/css/images/markers/badge-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
+  environment:
+    label: _(Environment)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/tree.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/tree.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  housing:
+    label: _(Housing)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/building.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/building.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  parks:
+    label: _(Parks & Recreation)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/swings.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/swings.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  health:
+    label: _(Public Health)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cross.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cross.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  safety:
+    label: _(Public Safety)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/badge.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/badge.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  seniors:
+    label: _(Seniors)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/seniors.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/seniors.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]  
+  streets:
+    label: _(Streets & Sidewalks)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cone.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cone.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]     
+  transit:
+    label: _(Transit)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/bus.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/bus.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  youth:
+    label: _(Youth)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/balloons.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/balloons.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]           
 
-#   swings:
-#     iconUrl: /static/css/images/markers/swings.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   swings-focused:
-#     iconUrl: /static/css/images/markers/swings.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   swings-gray:
-#     iconUrl: /static/css/images/markers/swings-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   swings-gray-focused:
-#     iconUrl: /static/css/images/markers/swings-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   swings-gold:
-#     iconUrl: /static/css/images/markers/swings-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   swings-gold-focused:
-#     iconUrl: /static/css/images/markers/swings-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   balloons:
-#     iconUrl: /static/css/images/markers/balloons.png
-#     shadowUrl: /static/css/images/markers/shadow-round.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   balloons-focused:
-#     iconUrl: /static/css/images/markers/balloons.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   balloons-gray:
-#     iconUrl: /static/css/images/markers/balloons-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-round.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   balloons-gray-focused:
-#     iconUrl: /static/css/images/markers/balloons-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   balloons-gold:
-#     iconUrl: /static/css/images/markers/balloons-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-round-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   balloons-gold-focused:
-#     iconUrl: /static/css/images/markers/balloons-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-round-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   seniors:
-#     iconUrl: /static/css/images/markers/seniors.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   seniors-focused:
-#     iconUrl: /static/css/images/markers/seniors.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   seniors-gray:
-#     iconUrl: /static/css/images/markers/seniors-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   seniors-gray-focused:
-#     iconUrl: /static/css/images/markers/seniors-gray.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   seniors-gold:
-#     iconUrl: /static/css/images/markers/seniors-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-gold.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
-#   seniors-gold-focused:
-#     iconUrl: /static/css/images/markers/seniors-gold.png
-#     shadowUrl: /static/css/images/markers/shadow-square-white.png
-#     iconSize:
-#       width: 31
-#       height: 32
-#     shadowSize:
-#       width: 31
-#       height: 32
-#     iconAnchor:
-#       x: 16
-#       y: 25
+# Icons for previous-approved projects
+  culture-approved:
+    label: _(Funded Culture & Community Facilities)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/communitycenter-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/communitycenter-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  education-approved:
+    label: _(Funded Schools & Education)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/books-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/books-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  environment-approved:
+    label: _(Funded Environment)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/tree-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/tree-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  housing-approved:
+    label: _(Funded Housing)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/building-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/building-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  parks-approved:
+    label: _(Funded Parks & Recreation)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/swings-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/swings-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  health-approved:
+    label: _(Funded Public Health)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cross-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cross-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  safety-approved:
+    label: _(Funded Public Safety)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/badge-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/badge-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  seniors-approved:
+    label: _(Funded Seniors)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/seniors-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/seniors-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]  
+  streets-approved:
+    label: _(Funded Streets & Sidewalks)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cone-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cone-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]     
+  transit-approved:
+    label: _(Funded Transit)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/bus-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/bus-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  youth-approved:
+    label: _(Funded Youth)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/balloons-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/balloons-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+
+# Icons for rejected projects
+  culture-rejected:
+    label: _(Culture & Community Facilities)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/communitycenter-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/communitycenter-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  education-rejected:
+    label: _(Schools & Education)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/books-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/books-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  environment-rejected:
+    label: _(Environment)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/tree-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/tree-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  housing-rejected:
+    label: _(Housing)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/building-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/building-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  parks-rejected:
+    label: _(Parks & Recreation)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/swings-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/swings-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  health-rejected:
+    label: _(Public Health)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cross-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cross-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  safety-rejected:
+    label: _(Public Safety)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/badge-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/badge-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  seniors-rejected:
+    label: _(Seniors)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/seniors-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/seniors-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]  
+  streets-rejected:
+    label: _(Streets & Sidewalks)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cone-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cone-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]     
+  transit-rejected:
+    label: _(Transit)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/bus-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/bus-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+  youth-rejected:
+    label: _(Youth)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/balloons-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square.png
+          iconSize:
+            width: 31
+            height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/balloons-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize:
+            width: 31
+          height: 32
+          shadowSize:
+            width: 31
+            height: 32
+          iconAnchor: [16, 25]
 
 activity:
   # Optional. Activity is supported by default. Set to false to disable.
