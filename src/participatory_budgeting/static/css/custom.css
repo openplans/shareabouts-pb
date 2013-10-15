@@ -35,13 +35,23 @@ a:hover {}
   font-size: 1em;
   display: block;
   height: 100%;
+  padding-left: 5.25em;
+  position: relative;
+  color: #000;
 }
-#site-title a:hover {}
+#site-title a:hover {
+  color: #000;
+}
 #site-logo {
-  height: 100%;
-  width: auto;
-  margin: 0 0.5em;
+  height: 4.5em;
+  width: 4.5em;
   float: left;
+  position: absolute;
+  top: -0.25em;
+  left: 0.25em;
+}
+#site-tagline {
+  display: none;
 }
 
 a#nav-bttn:link,
@@ -330,6 +340,16 @@ ul.recent-points {
 /* =Media Queries
 -------------------------------------------------------------- */
 
+@media only screen and (min-width: 480px) { /* menu is visible */
+  #site-tagline {
+    display: block;
+    font-size: 1.5em;
+    width: 10em;
+    white-space: normal;
+    line-height: 1.2;
+  }
+}
+
 @media only screen and (min-width: 768px) { /* menu is visible */
   .access {
     border: 0;
@@ -342,7 +362,33 @@ ul.recent-points {
 }
 
 @media only screen and (min-width: 1024px) { /* ticker is visible */
+  #site-title a:link,
+  #site-title a:visited {
+    padding-left: 6em;
+  }
+  #site-logo {
+    height: 5em;
+    width: 5em;
+    top: 0;
+    left: 0;
+  }
+  #site-tagline {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
+  #site-title a:link,
+  #site-title a:visited {
+    padding-left: 7em;
+  }
+  #site-logo {
+    height: 6em;
+    width: 6em;
+    top: 0;
+    left: 0;
+  }
+  #site-tagline {
+    font-size: 2.5em;
+  }
 }
