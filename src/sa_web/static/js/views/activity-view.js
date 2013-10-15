@@ -176,6 +176,7 @@ var Shareabouts = Shareabouts || {};
       modelData = this.processActionData(model, placeModel);
 
       if (modelData) {
+
         $template = $(Handlebars.templates['activity-list-item'](modelData));
 
         if (index >= this.$el.children().length) {

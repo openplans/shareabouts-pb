@@ -20,10 +20,9 @@ map:
     zoom: 15
     minZoom: 15
     maxZoom: 18
-  base_layer:
-    url: http://{s}.tiles.mapbox.com/v3/openplans.map-w29s5fls/{z}/{x}/{y}.png
-    attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
   layers:
+    - url: http://{s}.tiles.mapbox.com/v3/openplans.map-w29s5fls/{z}/{x}/{y}.png
+      attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
     - url: http://{s}.tiles.mapbox.com/v3/openplans.PB-D44/{z}/{x}/{y}.png
 
 # The keys show up in the dropdown list when you are adding a new place
@@ -995,7 +994,7 @@ place:
       type: select
       options:
         - label: _(Please choose...)
-          value: 
+          value:
         - label: _(Culture & Community Facilities)
           value: culture
         - label: _(Schools & Education)
@@ -1015,7 +1014,7 @@ place:
         - label: _(Streets & Sidewalks)
           value: streets
         - label: _(Transit)
-          value: transit   
+          value: transit
         - label: _(Youth)
           value: youth
       name: location_type
@@ -1082,7 +1081,7 @@ support:
   submit_btn_text: _(Support This!)
   action_text: supported
   anonymous_name: _(Someone)
-  
+
 pages:
   - title: About
     slug: about

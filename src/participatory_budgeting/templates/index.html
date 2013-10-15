@@ -40,9 +40,9 @@
 
   <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
   <!--[if lte IE 8]>
-      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.ie.css" />
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
   <![endif]-->
 
   <!--[if lt IE 9]>
@@ -54,7 +54,7 @@
 <body>
 
   <header id="site-header" class="clearfix{% if pages_config %} has-pages{% endif %}">
-    <h1 id="site-title"><a href="http://pbnyc.org/"><img id="site-logo" src="{{ config.static_url }}css/images/logo.png"><span id="site-tagline">{{ config.app.tagline }}</span></a></h1>
+      <h1 id="site-title"><a href="http://pbnyc.org">{{ config.app.name }}</a></h1>
     <div id="pages-nav-container"></div>
 
     {% if config.languages %}
@@ -118,19 +118,18 @@
 
   <div id="ticker">
     <ul class="legend">
-      <li class="clearfix"><img src="/static/css/images/markers/communitycenter.png"><img src="/static/css/images/markers/shadow-square.png"> Culture and Community Facilities</li>
-      <li class="clearfix"><img src="/static/css/images/markers/books.png"><img src="/static/css/images/markers/shadow-square.png"> Schools and Education</li>
+      <li class="clearfix"><img src="/static/css/images/markers/communitycenter.png"><img src="/static/css/images/markers/shadow-square.png"> Culture and Com
+      <li class="clearfix"><img src="/static/css/images/markers/books.png"><img src="/static/css/images/markers/shadow-square.png"> Schools and Education</li
       <li class="clearfix"><img src="/static/css/images/markers/tree.png"><img src="/static/css/images/markers/shadow-round.png"> Environment</li>
       <li class="clearfix"><img src="/static/css/images/markers/building.png"><img src="/static/css/images/markers/shadow-square.png"> Housing</li>
-      <li class="clearfix"><img src="/static/css/images/markers/swings.png"><img src="/static/css/images/markers/shadow-square.png"> Parks and Recreation</li>
+      <li class="clearfix"><img src="/static/css/images/markers/swings.png"><img src="/static/css/images/markers/shadow-square.png"> Parks and Recreation</li
       <li class="clearfix"><img src="/static/css/images/markers/cross.png"><img src="/static/css/images/markers/shadow-round.png"> Public Health</li>
       <li class="clearfix"><img src="/static/css/images/markers/badge.png"><img src="/static/css/images/markers/shadow-round.png"> Public Safety</li>
       <li class="clearfix"><img src="/static/css/images/markers/seniors.png"><img src="/static/css/images/markers/shadow-square.png"> Seniors</li>
       <li class="clearfix"><img src="/static/css/images/markers/cone.png"><img src="/static/css/images/markers/shadow-square.png"> Streets and Sidewalks</li>
       <li class="clearfix"><img src="/static/css/images/markers/bus.png"><img src="/static/css/images/markers/shadow-square.png"> Transit</li>
       <li class="clearfix"><img src="/static/css/images/markers/balloons.png"><img src="/static/css/images/markers/shadow-round.png"> Youth</li>
-      <li class="clearfix"><p class="color-info"><img src="/static/css/images/markers/tree-gold.png"><img src="/static/css/images/markers/shadow-round.png"> Gold = Previously Funded</p></li>
-    </ul>
+      <li class="clearfix"><p class="color-info"><img src="/static/css/images/markers/tree-gold.png"><img src="/static/css/images/markers/shadow-round.png">    </ul>
     <ul class="recent-points"></ul>
   </div>
   <p id="powered-by">{% blocktrans %}Powered by{% endblocktrans %} <a href="http://shareabouts.org/" class="shareabouts-logo">Shareabouts</a>, <span class="nowrap">a project of <a href="http://openplans.org/" class="openplans-logo">OpenPlans</a>.</span></p>
@@ -139,9 +138,8 @@
   </footer>
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="{{ STATIC_URL }}libs/jquery-1.7.2.js"><\/script>')</script><!-- FIXME: Maybe this should be pulled into the repo as a git submodule-->
-  <script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 
   {% compress js %}
   <script src="{{STATIC_URL}}libs/underscore.js"></script>
@@ -149,7 +147,7 @@
   <script src="{{STATIC_URL}}libs/handlebars-1.0.0.js"></script>
   <script src="{{STATIC_URL}}libs/moment.min.js"></script>
   <script src="{{STATIC_URL}}libs/json2.js"></script>
-  <script src="{{STATIC_URL}}libs/argo/views.js"></script>
+  <script src="{{STATIC_URL}}libs/leaflet.argo.js"></script>
   <script src="{{STATIC_URL}}libs/binaryajax.js"></script>
   <script src="{{STATIC_URL}}libs/exif.js"></script>
   <script src="{{STATIC_URL}}libs/load-image.min.js"></script>
@@ -233,11 +231,10 @@
 
   (function(S, $){
     // Boostrapping the place types and their icons
-    var placeConfig = {{ config.place|as_json }},
+    var flavorConfig = {{ config.data|as_json }},
+
+        placeConfig = {{ config.place|as_json }},
         placeTypesConfig = {{ config.place_types|as_json }},
-        placeTypeIconsConfig = {{ config.place_type_icons|as_json }},
-        placeTypeIcons = {},
-        placeTypes = {},
 
         surveyConfig = {{ config.survey|as_json }},
         supportConfig = {{ config.support|as_json }},
@@ -246,33 +243,6 @@
 
         pagesConfig = {{ pages_config_json|safe }},
         defaultPlaceTypeName = '{{ default_place_type }}';
-
-    // Define each Leaflet Icon type
-    _.each(placeTypeIconsConfig, function(config, name) {
-      placeTypeIcons[name] = L.icon({
-        iconUrl: config.iconUrl,
-        shadowUrl: config.shadowUrl,
-        iconSize: new L.Point(config.iconSize.width, config.iconSize.height),
-        iconAnchor: new L.Point(config.iconAnchor.x, config.iconAnchor.y),
-        popupAnchor: new L.Point(config.iconAnchor.x, config.iconAnchor.y)
-      });
-    });
-
-    // Init each icon and attach it to its type
-    _.each(placeTypesConfig, function(config, name) {
-
-      if (!defaultPlaceTypeName || name.toLowerCase() === defaultPlaceTypeName.toLowerCase()) {
-        placeTypes[name] = _.extend(config, {
-          'default': placeTypeIcons[config['default']],
-          'focused': placeTypeIcons[config.focused]
-        });
-
-        // Update in case if there is a case issue
-        if(defaultPlaceTypeName) {
-          defaultPlaceTypeName = name;
-        }
-      }
-    });
 
     $(function() {
       // Ready set go!
@@ -284,7 +254,10 @@
           Shareabouts.bootstrapped.currentUser ?
           'user:' + Shareabouts.bootstrapped.currentUser.id :
           {{ user_token_json|safe }}),
-        placeTypes: placeTypes,
+
+        config: flavorConfig,
+
+        placeTypes: placeTypesConfig,
         surveyConfig: surveyConfig,
         supportConfig: supportConfig,
         pagesConfig: pagesConfig,
