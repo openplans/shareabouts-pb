@@ -17,8 +17,8 @@ map:
     center:
       lat: 40.6619
       lng: -74.0125
-    zoom: 15
-    minZoom: 15
+    zoom: 14
+    minZoom: 14
     maxZoom: 18
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.map-w29s5fls/{z}/{x}/{y}.png
