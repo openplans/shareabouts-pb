@@ -909,7 +909,7 @@ place:
       attrs:
         - key: size
           value: 30
-    - prompt: _(Your age(optional and will NOT be shown on the map))
+    - prompt: _(Your age (optional and will NOT be shown on the map))
       type: text
       name: private-age
       attrs:
