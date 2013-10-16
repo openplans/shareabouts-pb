@@ -15,10 +15,10 @@ map:
   geolocation_onload: false
   options:
     center:
-      lat: 40.6222
-      lng: -73.778
-    zoom: 14
-    minZoom: 14
+      lat: 40.5939
+      lng: -73.7722
+    zoom: 16
+    minZoom: 15
     maxZoom: 18
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.map-w29s5fls/{z}/{x}/{y}.png
