@@ -6,6 +6,25 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-44613808-1');
-  ga('send', 'pageview');  
+  
+  // localhost only
+  // ga('create', 'UA-44613808-1', { 
+  //  'cookieDomain': 'none'
+  //});
+  
+  ga('send', 'pageview');
+  
+  (function(S) {
 
+    // logging panel actions
+    $(S).on('panelshow', function(evt, app, path) {
+      
+      siteName = app.appView.options.config.app.name;
+      panelTitle = $('#content h1:first').text();
+      
+      ga('send', 'event', 'Panel activity', siteName, panelTitle);
+      
+    });
+  }(Shareabouts));
+  
 </script>
