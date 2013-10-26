@@ -20,8 +20,10 @@
     $(S).on('panelshow', function(evt, app, path) {
       
       siteName = app.appView.options.config.app.name;
-      panelTitle = $('#content h1:first').text();
       
+      //we either have a page title, or an idea title
+      panelTitle = $('#content h1:first').text() + $('.idea-title').text();
+            
       ga('send', 'event', 'Panel activity', siteName, panelTitle);
       
     });
