@@ -34,22 +34,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/communitycenter.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/communitycenter.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   education:
     label: _(Schools & Education)
@@ -58,22 +50,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/books.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/books.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   environment:
     label: _(Environment)
@@ -82,22 +66,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/tree.png
           shadowUrl: /static/css/images/markers/shadow-round.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/tree.png
           shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   housing:
     label: _(Housing)
@@ -106,22 +82,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/building.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/building.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   parks:
     label: _(Parks & Recreation)
@@ -130,22 +98,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/swings.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/swings.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   health:
     label: _(Public Health)
@@ -154,22 +114,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/cross.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/cross.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   safety:
     label: _(Public Safety)
@@ -178,22 +130,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/badge.png
           shadowUrl: /static/css/images/markers/shadow-round.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/badge.png
           shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   seniors:
     label: _(Seniors)
@@ -202,22 +146,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/seniors.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/seniors.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]  
   streets:
     label: _(Streets & Sidewalks)
@@ -226,22 +162,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/cone.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/cone.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]     
   transit:
     label: _(Transit)
@@ -250,22 +178,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/bus.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/bus.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   youth:
     label: _(Youth)
@@ -274,22 +194,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/balloons.png
           shadowUrl: /static/css/images/markers/shadow-round.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/balloons.png
           shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]           
 
 # Icons for previous-approved projects
@@ -300,22 +212,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/communitycenter-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/communitycenter-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   education-approved:
     label: _(Funded Schools & Education)
@@ -324,22 +228,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/books-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/books-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   environment-approved:
     label: _(Funded Environment)
@@ -348,22 +244,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/tree-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/tree-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   housing-approved:
     label: _(Funded Housing)
@@ -372,22 +260,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/building-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/building-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   parks-approved:
     label: _(Funded Parks & Recreation)
@@ -396,22 +276,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/swings-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/swings-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   health-approved:
     label: _(Funded Public Health)
@@ -420,22 +292,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/cross-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/cross-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   safety-approved:
     label: _(Funded Public Safety)
@@ -444,22 +308,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/badge-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/badge-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   seniors-approved:
     label: _(Funded Seniors)
@@ -468,22 +324,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/seniors-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/seniors-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]  
   streets-approved:
     label: _(Funded Streets & Sidewalks)
@@ -492,22 +340,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/cone-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/cone-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]     
   transit-approved:
     label: _(Funded Transit)
@@ -516,22 +356,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/bus-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/bus-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   youth-approved:
     label: _(Funded Youth)
@@ -540,22 +372,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/balloons-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/balloons-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
 
@@ -567,22 +391,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/communitycenter-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/communitycenter-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   education-rejected:
     label: _(Schools & Education)
@@ -591,22 +407,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/books-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/books-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   environment-rejected:
     label: _(Environment)
@@ -615,22 +423,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/tree-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/tree-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   housing-rejected:
     label: _(Housing)
@@ -639,22 +439,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/building-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/building-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   parks-rejected:
     label: _(Parks & Recreation)
@@ -663,22 +455,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/swings-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/swings-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   health-rejected:
     label: _(Public Health)
@@ -687,22 +471,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/cross-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/cross-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   safety-rejected:
     label: _(Public Safety)
@@ -711,22 +487,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/badge-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/badge-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   seniors-rejected:
     label: _(Seniors)
@@ -735,22 +503,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/seniors-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/seniors-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]  
   streets-rejected:
     label: _(Streets & Sidewalks)
@@ -759,22 +519,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/cone-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/cone-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]     
   transit-rejected:
     label: _(Transit)
@@ -783,22 +535,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/bus-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/bus-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
   youth-rejected:
     label: _(Youth)
@@ -807,22 +551,14 @@ place_types:
         icon:
           iconUrl: /static/css/images/markers/balloons-gray.png
           shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize:
-            width: 31
-            height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
         focus_icon:
           iconUrl: /static/css/images/markers/balloons-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize:
-            width: 31
-          height: 32
-          shadowSize:
-            width: 31
-            height: 32
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
 activity:
